@@ -1,10 +1,10 @@
-package pe.edu.vallegrande.Proyect;
+package pe.edu.vallegrande.project;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProyectApplicationTests {
+class ProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
