@@ -1,7 +1,5 @@
-package pe.edu.vallegrande.project.rest;
+package pe.edu.vallegrande.nuevoagrozam.rest;
 
-import pe.edu.vallegrande.project.model.Customer;
-import pe.edu.vallegrande.project.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +9,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import pe.edu.vallegrande.nuevoagrozam.model.Customer;
+import pe.edu.vallegrande.nuevoagrozam.service.CustomerService;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package pe.edu.vallegrande.project.model;
+package pe.edu.vallegrande.nuevoagrozam.model;
 
 import lombok.Data;
 import jakarta.persistence.Entity;

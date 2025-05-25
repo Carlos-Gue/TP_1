@@ -1,11 +1,12 @@
-package pe.edu.vallegrande.project.service.impl;
+package pe.edu.vallegrande.nuevoagrozam.service.impl;
 
-import pe.edu.vallegrande.project.model.Product;
-import pe.edu.vallegrande.project.repository.ProductRepository;
-import pe.edu.vallegrande.project.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import lombok.extern.slf4j.Slf4j;
+import pe.edu.vallegrande.nuevoagrozam.model.Product;
+import pe.edu.vallegrande.nuevoagrozam.repository.ProductRepository;
+import pe.edu.vallegrande.nuevoagrozam.service.ProductService;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -22,29 +23,34 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> findAll() {
-        log.info("Listando Datos: ");
+        log.info("Listando todos los productos");
         return productRepository.findAll();
     }
 
     @Override
-    public Optional<Product> findById(Long id) {
-        log.info("Listando Datos por ID: ");
+    public Optional<Product> findById(Integer id) {
+        log.info("Buscando producto con ID: {}", id);
         return productRepository.findById(id);
     }
 
     @Override
     public Product save(Product product) {
-        log.info("Registrondo Datos: " + product.toString());
-        product.setState("A");
+        log.info("Registrando producto: {}", product);
+        if (product.getActive() == null) {
+            product.setActive("A");
+        }
         return productRepository.save(product);
     }
 
     @Override
     public Product update(Product product) {
-        log.info("Editando Datos: " + product.toString());
-        product.setState("A");
+        log.info("Actualizando producto: {}", product);
         return productRepository.save(product);
     }
 
+    @Override
+    public void deleteById(Integer id) {
+        log.info("Eliminando producto con ID: {}", id);
+        productRepository.deleteById(id);
+    }
 }
-

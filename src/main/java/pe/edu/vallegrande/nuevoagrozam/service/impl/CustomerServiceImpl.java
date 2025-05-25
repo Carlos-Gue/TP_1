@@ -1,11 +1,12 @@
-package pe.edu.vallegrande.project.service.impl;
+package pe.edu.vallegrande.nuevoagrozam.service.impl;
 
-import pe.edu.vallegrande.project.model.Customer;
-import pe.edu.vallegrande.project.repository.CustomerRepository;
-import pe.edu.vallegrande.project.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import lombok.extern.slf4j.Slf4j;
+import pe.edu.vallegrande.nuevoagrozam.model.Customer;
+import pe.edu.vallegrande.nuevoagrozam.repository.CustomerRepository;
+import pe.edu.vallegrande.nuevoagrozam.service.CustomerService;
+
 import java.util.List;
 import java.util.Optional;
 

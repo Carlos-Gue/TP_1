@@ -1,18 +1,19 @@
-package pe.edu.vallegrande.project.service;
+package pe.edu.vallegrande.nuevoagrozam.service;
 
-import pe.edu.vallegrande.project.model.Product;
 import java.util.List;
 import java.util.Optional;
+
+import pe.edu.vallegrande.nuevoagrozam.model.Product;
 
 public interface ProductService {
 
     List<Product> findAll();
 
-    Optional<Product> findById(Long id);
+    Optional<Product> findById(Integer id);
 
     Product save(Product product);
 
     Product update(Product product);
 
+    void deleteById(Integer id);
 }
-

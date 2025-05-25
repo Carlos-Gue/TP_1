@@ -1,8 +1,9 @@
-package pe.edu.vallegrande.project.repository;
+package pe.edu.vallegrande.nuevoagrozam.repository;
 
-import pe.edu.vallegrande.project.model.Customer;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import pe.edu.vallegrande.nuevoagrozam.model.Customer;
 
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 

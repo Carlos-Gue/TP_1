@@ -1,8 +1,9 @@
-package pe.edu.vallegrande.project.service;
+package pe.edu.vallegrande.nuevoagrozam.service;
 
-import pe.edu.vallegrande.project.model.Customer;
 import java.util.List;
 import java.util.Optional;
+
+import pe.edu.vallegrande.nuevoagrozam.model.Customer;
 
 public interface CustomerService {
 
