@@ -8,10 +8,16 @@ public interface CustomerService {
 
     List<Customer> findAll();
 
+    List<Customer> findByState(String state);
+
     Optional<Customer> findById(Long id);
 
     Customer save(Customer customer);
 
     Customer update(Customer customer);
+
+    Customer delete(Long id);
+
+    Customer restore(Long id);
     
 }

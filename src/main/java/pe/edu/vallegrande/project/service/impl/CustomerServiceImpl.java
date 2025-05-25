@@ -27,8 +27,14 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
+    public List<Customer> findByState(String state) {
+        log.info("Listando Datos por Estado: " + state);
+        return customerRepository.findByState(state);
+    }
+
+    @Override
     public Optional<Customer> findById(Long id) {
-        log.info("Listando Datos por ID: ");
+        log.info("Listando Datos por ID: " + id);
         return customerRepository.findById(id);
     }
 
@@ -42,6 +48,22 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Customer update(Customer customer) {
         log.info("Editando Datos: " + customer.toString());
+        customer.setState("A");
+        return customerRepository.save(customer);
+    }
+
+    @Override
+    public Customer delete(Long id) {
+        log.info("Eliminando Datos: " + id);
+        Customer customer = customerRepository.findById(id).orElseThrow(() -> new RuntimeException("Customer not found"));
+        customer.setState("I");
+        return customerRepository.save(customer);
+    }
+
+    @Override
+    public Customer restore(Long id) {
+        log.info("Restaurando Datos: " + id);
+        Customer customer = customerRepository.findById(id).orElseThrow(() -> new RuntimeException("Customer not found"));
         customer.setState("A");
         return customerRepository.save(customer);
     }
