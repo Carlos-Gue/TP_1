@@ -1,17 +1,17 @@
 {
 	"info": {
 		"_postman_id": "e76da26e-0c9d-4554-bf94-332eeb48337f",
-		"name": "SQL_SERVER",
+		"name": "SQL_MAVENP",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "14821201",
 		"_collection_link": "https://grey-robot-80782.postman.co/workspace/SQL_SERVER~e6df8417-9c04-4ad8-a61c-49aa6f83e059/collection/14821201-e76da26e-0c9d-4554-bf94-332eeb48337f?action=share&source=collection_link&creator=14821201"
 	},
 	"item": [
 		{
-			"name": "FOLDER",
+			"name": "PROYECT",
 			"item": [
 				{
-					"name": "CREATE | CREAR",
+					"name": "READ",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -25,7 +25,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://scaling-giggle-p9vp9xp7x4g3r59p-8085.app.github.dev/v1/api/customer/save",
+							"raw": "https://scaling-giggle-p9vp9xp7x4g3r59p-8085.app.github.dev/v1/api/product/save",
 							"protocol": "https",
 							"host": [
 								"scaling-giggle-p9vp9xp7x4g3r59p-8085",
@@ -36,7 +36,7 @@
 							"path": [
 								"v1",
 								"api",
-								"customer",
+								"product",
 								"save"
 							]
 						}

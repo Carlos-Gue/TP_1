@@ -29,7 +29,7 @@ public class ProductRest {
 
     // Leer un producto por ID
     @GetMapping("/{id}")
-    public Optional<Product> findById(@PathVariable Integer id) {
+    public Optional<Product> findById(@PathVariable Long id) {
         return productService.findById(id);
     }
 
@@ -47,7 +47,7 @@ public class ProductRest {
 
     // Eliminar un producto por ID
     @DeleteMapping("/delete/{id}")
-    public void delete(@PathVariable Integer id) {
+    public void delete(@PathVariable Long id) {
         productService.deleteById(id);
     }
 }

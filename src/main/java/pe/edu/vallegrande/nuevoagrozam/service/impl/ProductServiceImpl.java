@@ -28,7 +28,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Optional<Product> findById(Integer id) {
+    public Optional<Product> findById(Long id) {
         log.info("Buscando producto con ID: {}", id);
         return productRepository.findById(id);
     }
@@ -49,7 +49,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void deleteById(Integer id) {
+    public void deleteById(Long id) {
         log.info("Eliminando producto con ID: {}", id);
         productRepository.deleteById(id);
     }

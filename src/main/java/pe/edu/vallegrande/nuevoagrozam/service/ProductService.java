@@ -9,11 +9,11 @@ public interface ProductService {
 
     List<Product> findAll();
 
-    Optional<Product> findById(Integer id);
+    Optional<Product> findById(Long id);
 
     Product save(Product product);
 
     Product update(Product product);
 
-    void deleteById(Integer id);
+    void deleteById(Long id);
 }
