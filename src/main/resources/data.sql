@@ -1,8 +1,4 @@
 -- Active: 1748206983038@@127.0.0.1@14033@model@dbo
--- Crear el registro si es que no se duplican datos unicos o se insertan datos nulos
-INSERT INTO customer (dni, first_name, last_name, state)
-VALUES ('12345678', 'Juan', 'Sanchez', 'A');
-
 INSERT INTO product 
 (id_product, product_name, product_description, expiration_date, unit_if_measure, product_price, admission_date, current_stock)
     VALUES
