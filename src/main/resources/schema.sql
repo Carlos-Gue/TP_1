@@ -10,3 +10,6 @@ CREATE TABLE product (
     current_stock char(100)  NOT NULL,
     active char(1)  DEFAULT 'A'
 );
+
+
+select * from product

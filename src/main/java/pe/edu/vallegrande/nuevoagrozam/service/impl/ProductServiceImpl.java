@@ -36,8 +36,8 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product save(Product product) {
         log.info("Registrando producto: {}", product);
-        if (product.getActive() == null) {
-            product.setActive("A");
+        if (product.getState() == null) {
+            product.setState("A");
         }
         return productRepository.save(product);
     }

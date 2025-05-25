@@ -1,4 +1,4 @@
--- Active: 1748206983038@@127.0.0.1@14033@model@dbo
+-- Active: 1748208854007@@127.0.0.1@14033@model@dbo
 INSERT INTO product 
 (id_product, product_name, product_description, expiration_date, unit_if_measure, product_price, admission_date, current_stock)
     VALUES
