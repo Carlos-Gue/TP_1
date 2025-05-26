@@ -1,4 +1,5 @@
--- Active: 1748208854007@@127.0.0.1@14033@model@dbo
+-- Active: 1748212865229@@127.0.0.1@14033@model@dbo
+
 CREATE TABLE product (
     id_product int IDENTITY(1,1) PRIMARY KEY,
     product_name varchar(100)  NOT NULL,
